@@ -45,14 +45,3 @@ function createTable(event) {
         }
     });
 }
-
-
-
-
-
-
-
-
-
-
-
