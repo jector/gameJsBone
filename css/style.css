@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    height: 100%;
+}
+h1{
+    letter-spacing: 0;
+    font-size: 1.8em;
+    color: #666;
+    text-space: 5px;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+    padding: 0 20px 10px;
+    text-align: left;
+    position: relative;
+}
+h1:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #567D46;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-left: 12px solid #567D46;
+    position: absolute;
+    top: -23px;
+    left: 1px;
+    border-radius: 4px;
+}
+.contentCards{
+    margin: 25px auto;
+    width: 80%;
+    text-align: center;
+    background: #eee;
+    padding: 5px 0 5px;
+    border-radius: 5px;
+    border: solid 1px rgba(0,0,0,0.1);
+}
+input{
+    padding: 3px;
+    font-size: 16px;
+    height: 29px;
+    width: 65px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+button{
+    padding: 8px;
+    font-size: 14px;
+    background: #567D46;
+    border: 2px solid #567D46;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition:  .35s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    background: #ffffff;
+    color:#567D46;
+}
+table{
+    display: inline-table;
+    border-collapse: separate;
+    -webkit-border-horizontal-spacing: 2px;
+    -webkit-border-vertical-spacing: 2px;
+}
+/* Set the dimensions of all table cells */
+td {
+    width: 125px;
+    height: 125px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    border: 4px solid #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0, .3) ;
+    margin: 3px;
+    display: inline-block;
+    transition:  .45s ease-in-out;
+    background-position: center;
+    cursor: pointer;
+}
+td:hover{
+    width: 132px;
+    height: 132px;
+    box-shadow: 4px 4px 8px rgba(0,0,0, .6) ;
+    background-position: center;
+}
+/* Dark green for undug lawn squares */
+td.undug {
+    background-color: darkolivegreen;
+}
+/* Brown for dug lawn squares */
+td.dug {
+    background-color: saddlebrown;
+}
+/* Brown with image background for lawn squares with bones */
+td.dug-bone {
+    background-color: saddlebrown;
+    background-image: url("../pictures/bone.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.countBones{
+    height: 36px;
+}
+.foot{
+    border-top: 1px solid #ccc;
+    text-align: right;
+    font-size: 10px;
+    padding: 5px 25px 0;
+}
